@@ -1,7 +1,7 @@
 [
   {
     "_id": "RAKIN4vRNYY9nqLrg",
-    "name": "Embargo",
+    "name": "EMBARGO",
     "type": "JournalEntry",
     "sort": 1100000,
     "parent": null,
@@ -16,7 +16,7 @@
     "sort": 500000,
     "flags": {
       "dgr-embargo": {
-        "initialization-parent": "Embargo"
+        "initialization-parent": "EMBARGO"
       }
     },
     "parent": "RAKIN4vRNYY9nqLrg",
@@ -30,7 +30,7 @@
     "sort": 500000,
     "flags": {
       "dgr-embargo": {
-        "initialization-parent": "Embargo"
+        "initialization-parent": "EMBARGO"
       }
     },
     "parent": "RAKIN4vRNYY9nqLrg",
@@ -44,7 +44,7 @@
     "sort": 500000,
     "flags": {
       "dgr-embargo": {
-        "initialization-parent": "Embargo"
+        "initialization-parent": "EMBARGO"
       }
     },
     "parent": "RAKIN4vRNYY9nqLrg",
@@ -68,7 +68,7 @@
     "sort": 500000,
     "flags": {
       "dgr-embargo": {
-        "initialization-parent": "Embargo"
+        "initialization-parent": "EMBARGO SCENES"
       }
     },
     "parent": "lHl8Jf0KoWjjhG1q",
@@ -82,7 +82,7 @@
     "sort": 500000,
     "flags": {
       "dgr-embargo": {
-        "initialization-parent": "Embargo"
+        "initialization-parent": "EMBARGO SCENES"
       }
     },
     "parent": "lHl8Jf0KoWjjhG1q",
