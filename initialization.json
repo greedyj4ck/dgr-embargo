@@ -1,114 +1,102 @@
 [
-    {
-        "_id": "RAKIN4vRNYY9nqLrg",
-        "name": "Embargo",
-        "type": "JournalEntry",
-        "sort":   1100000,
-        "parent": null,
-        "flags": {},
-        "sorting": "m",
-        "color": ""
+  {
+    "_id": "RAKIN4vRNYY9nqLrg",
+    "name": "Embargo",
+    "type": "JournalEntry",
+    "sort": 1100000,
+    "parent": null,
+    "flags": {},
+    "sorting": "m",
+    "color": ""
+  },
+  {
+    "_id": "vgGdkXwjeBG2cVGds",
+    "name": "CHARACTERS",
+    "type": "JournalEntry",
+    "sort": 500000,
+    "flags": {
+      "dgr-embargo": {
+        "initialization-parent": "Embargo"
+      }
     },
-    {
-        "_id": "vgGdkXwjeBG2cVGds",
-        "name": "CHARACTERS",
-        "type": "JournalEntry",
-        "sort": 500000,
-        "flags": {
-            "dgr-embargo": {
-                "initialization-parent": "Embargo"
-            }
-        },
-        "parent": "RAKIN4vRNYY9nqLrg",
-        "sorting": "a",
-        "color": ""
+    "parent": "RAKIN4vRNYY9nqLrg",
+    "sorting": "a",
+    "color": ""
+  },
+  {
+    "_id": "VpNQtNdXxiBoiaZC",
+    "name": "HANDOUTS",
+    "type": "JournalEntry",
+    "sort": 500000,
+    "flags": {
+      "dgr-embargo": {
+        "initialization-parent": "Embargo"
+      }
     },
-    {
-        "_id": "VpNQtNdXxiBoiaZC",
-        "name": "HANDOUTS",
-        "type": "JournalEntry",
-        "sort": 500000,
-        "flags": {
-            "dgr-embargo": {
-                "initialization-parent": "Embargo"
-            }
-        },
-        "parent": "RAKIN4vRNYY9nqLrg",
-        "sorting": "a",
-        "color": ""
+    "parent": "RAKIN4vRNYY9nqLrg",
+    "sorting": "a",
+    "color": ""
+  },
+  {
+    "_id": "z9D2SBZDmZLwb9WN",
+    "name": "SCENES",
+    "type": "JournalEntry",
+    "sort": 500000,
+    "flags": {
+      "dgr-embargo": {
+        "initialization-parent": "Embargo"
+      }
     },
-    {
-        "_id": "z9D2SBZDmZLwb9WN",
-        "name": "SCENES",
-        "type": "JournalEntry",
-        "sort": 500000,
-        "flags": {
-            "dgr-embargo": {
-                "initialization-parent": "Embargo"
-            }
-        },
-        "parent": "RAKIN4vRNYY9nqLrg",
-        "sorting": "a",
-        "color": ""
+    "parent": "RAKIN4vRNYY9nqLrg",
+    "sorting": "a",
+    "color": ""
+  },
+  {
+    "_id": "lHl8Jf0KoWjjhG1q",
+    "name": "EMBARGO SCENES",
+    "type": "Scene",
+    "sort": 1100000,
+    "parent": null,
+    "flags": {},
+    "sorting": "m",
+    "color": ""
+  },
+  {
+    "_id": "tje933bjmrV4UtAZ",
+    "name": "MAPS (LABELS)",
+    "type": "Scene",
+    "sort": 500000,
+    "flags": {
+      "dgr-embargo": {
+        "initialization-parent": "Embargo"
+      }
     },
-
-
-
-
-
-
-
-    {
-        "_id": "lHl8Jf0KoWjjhG1q",
-        "name": "EMBARGO SCENES",
-        "type": "Scene",
-        "sort": 1100000,
-        "parent": null,
-        "flags": {},
-        "sorting": "m",
-        "color": ""
+    "parent": "lHl8Jf0KoWjjhG1q",
+    "sorting": "a",
+    "color": ""
+  },
+  {
+    "_id": "Ik6YmWpefmFuiNKb",
+    "name": "MAPS (NO LABELS)",
+    "type": "Scene",
+    "sort": 500000,
+    "flags": {
+      "dgr-embargo": {
+        "initialization-parent": "Embargo"
+      }
     },
-    {
-        "_id": "tje933bjmrV4UtAZ",
-        "name": "MAPS (LABELS)",
-        "type": "Scene",
-        "sort": 500000,
-        "flags": {
-            "dgr-embargo": {
-                "initialization-parent": "Embargo"
-            }
-        },
-        "parent": "lHl8Jf0KoWjjhG1q",
-        "sorting": "a",
-        "color": ""
-    },
-    {
-        "_id": "Ik6YmWpefmFuiNKb",
-        "name": "MAPS (NO LABELS)",
-        "type": "Scene",
-        "sort": 500000,
-        "flags": {
-            "dgr-embargo": {
-                "initialization-parent": "Embargo"
-            }
-        },
-        "parent": "lHl8Jf0KoWjjhG1q",
-        "sorting": "a",
-        "color": ""
-    },
-
-
-
-
-
-    {
-        "_id": "6glaQizIvEcKa2Ot",
-        "name": "EMBARGO CHARACTERS",
-        "type": "Actor",
-        "sort": 500000,
-        "parent": null,
-        "flags": {},
-        "sorting": "a",
-        "color": ""
-    }
+    "parent": "lHl8Jf0KoWjjhG1q",
+    "sorting": "a",
+    "color": ""
+  },
+  {
+    "_id": "6glaQizIvEcKa2Ot",
+    "name": "EMBARGO CHARACTERS",
+    "type": "Actor",
+    "sort": 500000,
+    "parent": null,
+    "flags": {},
+    "sorting": "a",
+    "color": ""
+  }
 ]
