@@ -1,0 +1,47 @@
+{
+    "name": "dgr-embargo",
+    "title": "Degenesis: Rebirth - Embargo Adventure",
+    "description": "The Embardo introductory adventure (part of Katharsys book) for the Degenesis: Rebirth System. PDF can be downloaded free at: https://degenesis.com/downloads/books/degenesis-rebirth-edition .",
+    "version": "0.0.1",
+    "author": "Vindico9013, GЯΣΣDYJΛCK#2690",
+    "systems": ["degenesis"],
+    "scripts": ["initialization.js"],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "packs": [
+        {
+            "name": "dgr-embargo-journals",
+            "label": "Embargo Journals",
+            "system": "degenesis",
+            "module": "dgr-embargo",
+            "path": "./packs/embargo-journals.db",
+            "entity": "JournalEntry"
+        },
+        {
+            "name": "dgr-embargo-scenes",
+            "label": "Embargo Scenes",
+            "system": "degenesis",
+            "module": "dgr-embargo",
+            "path": "./packs/embargo-scenes.db",
+            "entity": "Scene"
+        },
+        {
+            "name": "dgr-embargo-actors",
+            "label": "Embargo Actors",
+            "system": "degenesis",
+            "module": "dgr-embargo",
+            "path": "./packs/embargo-actors.db",
+            "entity": "Actor"
+        }
+    ],
+    "minimumCoreVersion": "0.8.5",
+    "compatibleCoreVersion": "0.8.7",
+    "manifest": "https://raw.githubusercontent.com/dgr-foundry/dgr-embargo/main/module.json",
+    "download": "https://github.com/dgr-foundry/dgr-embargo/archive/refs/tags/0.0.1.zip"
+}
+    
