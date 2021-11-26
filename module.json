@@ -41,7 +41,6 @@
     ],
     "minimumCoreVersion": "0.8.5",
     "compatibleCoreVersion": "0.8.7",
-    "manifest": "https://raw.githubusercontent.com/dgr-foundry/dgr-embargo/main/module.json",
-    "download": "https://github.com/dgr-foundry/dgr-embargo/archive/refs/tags/0.0.1.zip"
+    "manifest": "https://raw.githubusercontent.com/greedyj4ck/dgr-embargo/main/module.json",
+    "download": "https://github.com/greedyj4ck/dgr-embargo/archive/refs/tags/0.0.1.zip"
 }
-    
