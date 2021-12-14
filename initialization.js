@@ -111,7 +111,7 @@ class DGREmbargoInitialization extends Dialog {
 
   async initializeEntities() {
     let journalPack = `${this.moduleKey}.dgr-embargo-journals`;
-    let journalPackContent = await game.packs.get(journalPack).getContent();
+    let journalPackContent = await game.packs.get(journalPack).getDocuments();
 
     journalPackContent.forEach((entity) => {
       let entityObject = entity.toObject();
@@ -139,7 +139,7 @@ class DGREmbargoInitialization extends Dialog {
   // Init scenes here
   async initializeScenes() {
     let scenesPack = `${this.moduleKey}.dgr-embargo-scenes`;
-    let scenesPackContent = await game.packs.get(scenesPack).getContent();
+    let scenesPackContent = await game.packs.get(scenesPack).getDocuments();
 
     console.log(scenesPackContent);
 
@@ -171,7 +171,7 @@ class DGREmbargoInitialization extends Dialog {
   // Init actors here
   async initializeActors() {
     let actorsPack = `${this.moduleKey}.dgr-embargo-actors`;
-    let actorsPackContent = await game.packs.get(actorsPack).getContent();
+    let actorsPackContent = await game.packs.get(actorsPack).getDocuments();
 
     console.log(actorsPackContent);
 
