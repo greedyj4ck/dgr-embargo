@@ -7,7 +7,7 @@ Embargo adventure for Degenesis: Rebirth
 Install the module manually by entering the following path:
 
 ```
-https://raw.githubusercontent.com/dgr-foundry/dgr-embargo/main/module.json
+https://raw.githubusercontent.com/greedyj4ck/dgr-embargo/main/module.json
 ```
 
 
