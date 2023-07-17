@@ -1,68 +1,77 @@
 {
-    "id": "dgr-embargo",
-    "title": "Degenesis: Rebirth - Embargo Adventure",
-    "description": "The Embardo introductory adventure (part of Katharsys book) for the Degenesis: Rebirth System. PDF can be downloaded free at: https://degenesis.com/downloads/books/degenesis-rebirth-edition .",
-    "version": "0.2.0",
-    "relationships": {
-        "systems": [{
-          "id": "degenesis",
-          "type": "system",
-          "manifest": "",
-          "compatibility": {
-            "minimum": "0.5.0",
-            "verified": "0.5.0"
-          }
-        }]},
-    "compatibility": {
-        "minimum": 10,
-        "verified": "10.283",
-        "maximum": 10
-      },
-
-    "authors": [{
-        "name": "Vindico",
-        "discord": "Vindico#9013"
-      },
+  "id": "dgr-embargo",
+  "title": "Degenesis: Rebirth - Embargo Adventure",
+  "description": "The Embardo introductory adventure (part of Katharsys book) for the Degenesis: Rebirth System. PDF can be downloaded free at: https://degenesis.com/downloads/books/degenesis-rebirth-edition .",
+  "version": "0.2.1",
+  "relationships": {
+    "systems": [
       {
-        "name": "Greedyj4ck",
-        "discord": "GЯΣΣDYJΛCK#2690"
+        "id": "degenesis",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.6.0",
+          "verified": "0.6.0"
+        }
       }
-    ],    
-    "scripts": ["initialization.js"],
-    "languages": [
-        {
-            "lang": "en",
-            "name": "English",
-            "path": "lang/en.json"
-        }
-    ],
-    "packs": [
-        {
-            "name": "dgr-embargo-journals",
-            "label": "Embargo Journals",
-            "system": "degenesis",
-            "module": "dgr-embargo",
-            "path": "./packs/embargo-journals.db",
-            "type": "JournalEntry"
-        },
-        {
-            "name": "dgr-embargo-scenes",
-            "label": "Embargo Scenes",
-            "system": "degenesis",
-            "module": "dgr-embargo",
-            "path": "./packs/embargo-scenes.db",
-            "type": "Scene"
-        },
-        {
-            "name": "dgr-embargo-actors",
-            "label": "Embargo Actors",
-            "system": "degenesis",
-            "module": "dgr-embargo",
-            "path": "./packs/embargo-actors.db",
-            "type": "Actor"
-        }
-    ],
-
-    "manifest": "https://github.com/greedyj4ck/dgr-embargo/releases/latest/download/module.json",
-    "download": "https://github.com/greedyj4ck/dgr-embargo/releases/latest/download/module.zip"
+    ]
+  },
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.305",
+    "maximum": "11"
+  },
+  "authors": [
+    {
+      "name": "Vindico",
+      "discord": "Vindico#9013",
+      "flags": {}
+    },
+    {
+      "name": "Greedyj4ck",
+      "discord": "GЯΣΣDYJΛCK#2690",
+      "flags": {}
+    }
+  ],
+  "scripts": [
+    "initialization.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "dgr-embargo-journals",
+      "label": "Embargo Journals",
+      "system": "degenesis",
+      "path": "packs/embargo-journals.db",
+      "type": "JournalEntry",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dgr-embargo-scenes",
+      "label": "Embargo Scenes",
+      "system": "degenesis",
+      "path": "packs/embargo-scenes.db",
+      "type": "Scene",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dgr-embargo-actors",
+      "label": "Embargo Actors",
+      "system": "degenesis",
+      "path": "packs/embargo-actors.db",
+      "type": "Actor",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "manifest": "https://github.com/greedyj4ck/dgr-embargo/releases/latest/download/module.json",
+  "download": "https://github.com/greedyj4ck/dgr-embargo/releases/latest/download/module.zip"
 }
