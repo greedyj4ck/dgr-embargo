@@ -22,15 +22,6 @@ Hooks.on("ready", () => {
   }
 });
 
-
-
-
-    
-    
-   
- 
-
-
 class DGREmbargoInitWrapper extends FormApplication {
   render() {
     new DGREmbargoInitialization().render(true);
@@ -91,9 +82,8 @@ class DGREmbargoInitialization extends Dialog {
       fetch(`modules/${this.moduleKey}/initialization.json`)
         .then(async (r) => r.json())
         .then(async (json) => {
-          
           let createdFolders = await Folder.create(json);
-          
+
           for (let folder of createdFolders)
             this.folders[folder.type][folder.name] = folder;
 
@@ -112,14 +102,14 @@ class DGREmbargoInitialization extends Dialog {
             }
           }
 
-        // Initialize Journals
-        await this.initializeEntities();
+          // Initialize Journals
+          await this.initializeEntities();
 
-        // Initialize Scenes
-        await this.initializeScenes();
+          // Initialize Scenes
+          await this.initializeScenes();
 
-        // Initialize Actors
-        await this.initializeActors();
+          // Initialize Actors
+          await this.initializeActors();
           resolve();
         });
     });
@@ -127,8 +117,8 @@ class DGREmbargoInitialization extends Dialog {
 
   async initializeEntities() {
     let journalPack = `${this.moduleKey}.dgr-embargo-journals`;
-    let journalGamePack = await game.packs.get(journalPack).migrate()
-    let journalPackContent = await journalGamePack .getDocuments();
+    let journalGamePack = await game.packs.get(journalPack).migrate();
+    let journalPackContent = await journalGamePack.getDocuments();
 
     journalPackContent.forEach((entity) => {
       let entityObject = entity.toObject();
@@ -147,7 +137,7 @@ class DGREmbargoInitialization extends Dialog {
   // Init scenes here
   async initializeScenes() {
     let scenesPack = `${this.moduleKey}.dgr-embargo-scenes`;
-    let scenesGamePack =  await game.packs.get(scenesPack).migrate()
+    let scenesGamePack = await game.packs.get(scenesPack).migrate();
     let scenesPackContent = await scenesGamePack.getDocuments();
 
     console.log(scenesPackContent);
@@ -180,7 +170,7 @@ class DGREmbargoInitialization extends Dialog {
   // Init actors here
   async initializeActors() {
     let actorsPack = `${this.moduleKey}.dgr-embargo-actors`;
-    let actorsGamePack =  await game.packs.get(actorsPack).migrate()
+    let actorsGamePack = await game.packs.get(actorsPack).migrate();
     let actorsPackContent = await actorsGamePack.getDocuments();
 
     console.log(actorsPackContent);
@@ -199,34 +189,32 @@ class DGREmbargoInitialization extends Dialog {
   }
 }
 
-
-
 // Helper function to merging journal files to single object
 
-function JournalMerge(foldername){
-
+function JournalMerge(foldername) {
   const folderName = foldername; // Change this.
-  const folder = game.folders.find(f => {
-    return (f.name === folderName) && (f.type === "JournalEntry");
+  const folder = game.folders.find((f) => {
+    return f.name === folderName && f.type === "JournalEntry";
   });
-  if ( !folder ) return;
-  const sort = folder.sorting === "m"
-    ? SidebarDirectory._sortStandard
-    : SidebarDirectory._sortAlphabetical;
+  if (!folder) return;
+  const sort =
+    folder.sorting === "m"
+      ? SidebarDirectory._sortStandard
+      : SidebarDirectory._sortAlphabetical;
   const contents = folder.contents.sort(sort);
   const pages = contents.flatMap((entry, i) => {
     const pages = [];
     // Preserve sort order in the folder.
     let sort = (i + 1) * 200_000;
-    const textPage = entry.pages.find(p => p.type === "text")?.toObject();
-    const imagePage = entry.pages.find(p => p.type === "image")?.toObject();
-    if ( textPage ) {
+    const textPage = entry.pages.find((p) => p.type === "text")?.toObject();
+    const imagePage = entry.pages.find((p) => p.type === "image")?.toObject();
+    if (textPage) {
       textPage.title.show = true;
       textPage.sort = sort;
       pages.push(textPage);
       sort -= 100_000;
     }
-    if ( imagePage ) {
+    if (imagePage) {
       imagePage.sort = sort;
       pages.push(imagePage);
     }
@@ -235,8 +223,6 @@ function JournalMerge(foldername){
   JournalEntry.implementation.create({
     pages,
     name: folder.name,
-    folder: folder.folder?.id
+    folder: folder.folder?.id,
   });
-  };
-  
-  
+}

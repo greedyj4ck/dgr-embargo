@@ -2,7 +2,7 @@
   "id": "dgr-embargo",
   "title": "Degenesis: Rebirth - Embargo Adventure",
   "description": "The Embardo introductory adventure (part of Katharsys book) for the Degenesis: Rebirth System. PDF can be downloaded free at: https://degenesis.com/downloads/books/degenesis-rebirth-edition .",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "relationships": {
     "systems": [
       {
@@ -10,15 +10,15 @@
         "type": "system",
         "compatibility": {
           "minimum": "0.6.0",
-          "verified": "0.6.0"
+          "verified": "0.7.0"
         }
       }
     ]
   },
   "compatibility": {
     "minimum": "11",
-    "verified": "11.305",
-    "maximum": "11"
+    "verified": "12.324",
+    "maximum": "12"
   },
   "authors": [
     {
@@ -32,9 +32,7 @@
       "flags": {}
     }
   ],
-  "scripts": [
-    "initialization.js"
-  ],
+  "scripts": ["initialization.js"],
   "languages": [
     {
       "lang": "en",
